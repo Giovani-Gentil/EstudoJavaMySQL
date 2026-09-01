@@ -27,9 +27,6 @@ public class Program {
 		
 //		try {
 //			
-//		
-//			
-//			
 //			st = conn.createStatement();
 //			rs = st.executeQuery("SELECT * FROM DEPARTMENT");
 //			
@@ -37,8 +34,6 @@ public class Program {
 //				System.out.println(rs.getInt("Id") + ", " + rs.getString("Nome"));
 //			}
 			
-//			
-//			
 //			
 //		} catch (SQLException e) {
 //			e.printStackTrace();
