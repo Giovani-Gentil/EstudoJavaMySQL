@@ -1,12 +1,12 @@
 CREATE TABLE department (
   Id int(11) NOT NULL AUTO_INCREMENT,
-  Name varchar(60) DEFAULT NULL,
+  Nome varchar(60) DEFAULT NULL,
   PRIMARY KEY (Id)
 );
 
 CREATE TABLE seller (
   Id int(11) NOT NULL AUTO_INCREMENT,
-  Name varchar(60) NOT NULL,
+  Nome varchar(60) NOT NULL,
   Email varchar(100) NOT NULL,
   BirthDate datetime NOT NULL,
   BaseSalary double NOT NULL,
@@ -15,13 +15,13 @@ CREATE TABLE seller (
   FOREIGN KEY (DepartmentId) REFERENCES department (id)
 );
 
-INSERT INTO department (Name) VALUES 
+INSERT INTO department (Nome) VALUES 
   ('Computers'),
   ('Electronics'),
   ('Fashion'),
   ('Books');
 
-INSERT INTO seller (Name, Email, BirthDate, BaseSalary, DepartmentId) VALUES 
+INSERT INTO seller (Nome, Email, BirthDate, BaseSalary, DepartmentId) VALUES 
   ('Bob Brown','bob@gmail.com','1998-04-21 00:00:00',1000,1),
   ('Maria Green','maria@gmail.com','1979-12-31 00:00:00',3500,2),
   ('Alex Grey','alex@gmail.com','1988-01-15 00:00:00',2200,1),
